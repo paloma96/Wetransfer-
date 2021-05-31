@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeTransfer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/app.js"></script>    
+</head>
+<body>
+    <header class="header">
+        <div class="header__centrado">
+            <svg class="header__menu" width="100%" height="100%" viewBox="0 0 20 14"><defs><path d="M0 1c0-.55229.44771-1 1-1h18c.5523 0 1 .44771 1 1 0 .55228-.4477 1-1 1H1c-.55229 0-1-.44772-1-1zm0 12c0-.5523.44771-1 1-1h18c.5523 0 1 .4477 1 1s-.4477 1-1 1H1c-.55229 0-1-.4477-1-1zm1-7c-.55229 0-1 .44772-1 1s.44771 1 1 1h18c.5523 0 1-.44772 1-1s-.4477-1-1-1H1z" id="hamburger-path-1"></path></defs><g id="hamburger-shape" stroke="none" fill="currentColor"><use fill-rule="evenodd" xlink:href="#hamburger-path-1"></use></g>
+            </svg>
+            <!-- <img src="assets/logo.svg" alt="WeTranfer" class="header__img"> -->
+            <svg width="100%" height="100%" class="header__logo" viewBox="-4 -2 52 29">
+                <defs><path id="logo-path" d="M25.4 10.6c0-6.2 4.4-9.9 10.1-9.9C40.6.7 44 3.3 44 6.9c0 3.4-2.9 5.6-6.1 5.6-1.8 0-3.1-.3-4-1-.3-.3-.5-.2-.5.1 0 1.3.5 2.3 1.3 3.2.7.7 2 1.2 3.2 1.2 1.3 0 2.4-.3 3.4-.8s1.8-.3 2.3.5c.6.9-.2 2.1-.9 2.9-1.3 1.4-3.8 2.4-7 2.4-6.5-.2-10.3-4.6-10.3-10.4zm-13.3 4.1c.6 0 1 .3 1.4 1l1.8 2.9c.7 1.1 1.3 1.9 2.6 1.9s2-.5 2.6-2c.8-1.8 1.7-4.1 2.4-7.1.9-3.4 1.3-5.4 1.3-7.1s-.5-2.7-2.4-3c-2.5-.5-6-.7-9.7-.7s-7.2.2-9.7.6C.5 1.6 0 2.6 0 4.3S.4 8 1.2 11.4c.8 3 1.6 5.2 2.4 7.1.7 1.5 1.3 2 2.6 2s1.9-.8 2.6-1.9l1.8-2.9c.5-.6.9-1 1.5-1z"></path><filter id="logo-filter" width="100%" height="100%" x="-50%" y="-50%" filterUnits="objectBoundingBox"><feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur></filter></defs><g fill="currentColor" class="logo-shape"><use fill="currentColor" fill-opacity="0.11" xlink:href="#logo-path"></use><use fill-rule="evenodd" xlink:href="#logo-path"></use></g>
+            </svg>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li"><a href="#" title="" class="header__a">Ayuda</a></li>
+                    <li class="header__li"><a href="#" title="" class="header__a">Productos</a></li>
+                    <li class="header__li"><a href="#" title="" class="header__a">Empresa</a></li>
+                    <li class="header__li"><a href="#" title="" class="header__a">Date de alta</a></li>
+                    <li class="header__li"><a href="#" title="" class="header__a">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+            <a href="#" title="Iniciar sesion" class="header__a-movil">Iniciar sesión</a>       
+        </div>        
+    </header>
+    
+    <main>
+        <form action="" method="post" class="form">
+
+            <div class="form__archivos">
+                <label class="form__label">
+                    <svg viewBox="0 0 72 72" class="form__svg form__svg-subir" fill="currentColor">
+                        <path d="M36.493 72C16.118 72 0 55.883 0 36.493 0 16.118 16.118 0 36.493 0 55.882 0 72 16.118 72 36.493 72 55.882 55.883 72 36.493 72zM34 34h-9c-.553 0-1 .452-1 1.01v1.98A1 1 0 0 0 25 38h9v9c0 .553.452 1 1.01 1h1.98A1 1 0 0 0 38 47v-9h9c.553 0 1-.452 1-1.01v-1.98A1 1 0 0 0 47 34h-9v-9c0-.553-.452-1-1.01-1h-1.98A1 1 0 0 0 34 25v9z" fill="currentColor" fill-rule="nonzero"></path>
+                    </svg>
+                    <div class="form__textos">
+                        <input type="file" id="file" webkitdirectory="webkitdirectory">
+                        <h2 class="form__h2">Añade tus archivos</h2 for="file">                        
+                        <p class="form__p" for="file">O selecciona una carpeta</p>
+                    </div>
+                </label>
+            </div>
+                
+            </div>
+            <div class="form__campos">
+                <input type="email" name="correo" placeholder="Enviar email a" class="form__input">
+                <input type="email" name="correo" placeholder="Tu email" class="form__input">
+                <textarea name="mensaje" placeholder="Mensaje" class="form__input" rows="3"></textarea>
+            </div>
+            
+            <div class="form__footer">
+                <svg viewBox="0 0 24 24" class="form__svg form__svg-mas">
+                    <path fill="currentColor" d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M16.5,13.5 C17.3284271,13.5 18,12.8284271 18,12 C18,11.1715729 17.3284271,10.5 16.5,10.5 C15.6715729,10.5 15,11.1715729 15,12 C15,12.8284271 15.6715729,13.5 16.5,13.5 Z M12,13.5 C12.8284271,13.5 13.5,12.8284271 13.5,12 C13.5,11.1715729 12.8284271,10.5 12,10.5 C11.1715729,10.5 10.5,11.1715729 10.5,12 C10.5,12.8284271 11.1715729,13.5 12,13.5 Z M7.5,13.5 C8.32842712,13.5 9,12.8284271 9,12 C9,11.1715729 8.32842712,10.5 7.5,10.5 C6.67157288,10.5 6,11.1715729 6,12 C6,12.8284271 6.67157288,13.5 7.5,13.5 Z"></path>
+                </svg>
+                <input type="submit" value="Enviar" class="form__enviar">
+            </div>
+
+        </form> 
+        <!-- MOVIL -->
+        <div class="movil__principal">
+            <div class="movil__texto">
+                <h1 class="movil__h1">WeTransfer es la forma más sencilla de enviar archivos alrededor del mundo</h1>
+                <a href="#" title="Enviar" class="movil__a">¿Enviar archivo?</a>
+            </div>
+        </div>
+
+        <div class="movil__seccion">
+            <h1 class="movil__titulo">WeTransfer Pro</h1>
+            <h2 class="movil__h2">Sácale más partido a WeTransfer convirtiéndote en un Pro</h2>
+            <ul class="movil__ul">
+                <li class="movil__li">
+                    <img src="assets/v.svg" alt="tick" class="movil__tick">
+                    <p class="movil__p">Transferencias de hasta 20 GB</p>
+                </li>
+                <li class="movil__li">
+                    <img src="assets/v.svg" alt="tick" class="movil__tick">
+                    <p class="movil__p">Espacio de almacenaje de hasta 1 TB</p>
+                </li>
+                <li class="movil__li">
+                    <img src="assets/v.svg" alt="tick" class="movil__tick">
+                    <p class="movil__p">Personaliza tu perfil</p>
+                </li>
+            </ul>
+            <a href="#" title="Consigue WeTransfer Pro" class="movil__a movil__a-azul">Consigue WeTransfer Pro</a>
+        </div>
+
+        <div class="movil__seccion-2">
+            <img src="assets/collect.svg" loading="lazy" alt="Collect by WeTransfer" class="movil__imagen-titulo">
+            <img src="assets/fondo-movil2.png" alt="Imagen" loading="lazy" class="movil__ilustracion">
+            <h2 class="movil__titulo">Una aplicación para guardarlo todo</h2>
+            <p class="movil__p">Organiza imágenes, vídeos y canciones desde cualquiera de tus apps en unos boards colaborativos preciosos, y compártelos con tus amigos o equipo.</p>
+            <a href="" class="movil__a movil__a-transparente">
+                <img src="assets/apple.svg" alt="Apple" loading="lazy" class="movil__apple">
+                Consigue Collect
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__arriba">
+            <svg width="100%" height="100%" class="footer__logo" viewBox="0 0 44 21">
+                <defs><path id="logo-path" d="M25.4 10.6c0-6.2 4.4-9.9 10.1-9.9C40.6.7 44 3.3 44 6.9c0 3.4-2.9 5.6-6.1 5.6-1.8 0-3.1-.3-4-1-.3-.3-.5-.2-.5.1 0 1.3.5 2.3 1.3 3.2.7.7 2 1.2 3.2 1.2 1.3 0 2.4-.3 3.4-.8s1.8-.3 2.3.5c.6.9-.2 2.1-.9 2.9-1.3 1.4-3.8 2.4-7 2.4-6.5-.2-10.3-4.6-10.3-10.4zm-13.3 4.1c.6 0 1 .3 1.4 1l1.8 2.9c.7 1.1 1.3 1.9 2.6 1.9s2-.5 2.6-2c.8-1.8 1.7-4.1 2.4-7.1.9-3.4 1.3-5.4 1.3-7.1s-.5-2.7-2.4-3c-2.5-.5-6-.7-9.7-.7s-7.2.2-9.7.6C.5 1.6 0 2.6 0 4.3S.4 8 1.2 11.4c.8 3 1.6 5.2 2.4 7.1.7 1.5 1.3 2 2.6 2s1.9-.8 2.6-1.9l1.8-2.9c.5-.6.9-1 1.5-1z"></path></defs><g fill="none" class="logo-shape"><use fill="#484a4d" fill-rule="evenodd" xlink:href="#logo-path"></use></g>
+            </svg>
+            <a href="#" title="Idioma" class="footer__a">Español</a>
+            <svg class="footer__arrow" viewBox="-1 14 9 12">
+                <path stroke="#6a6d70" stroke-width="2" d="M5 15l-5 5 5 5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            </svg>
+        </div>
+
+        <div class="footer__abajo">
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a href="#" title="Info legal" class="footer__li-a">Info legal</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" title="Your Privacy Choices" class="footer__li-a">Your Privacy Choices</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" title="Prensa" class="footer__li-a">Prensa</a>
+                </li>
+                <li class="footer__li">
+                    <a href="#" title="Empleo" class="footer__li-a">Empleo</a>
+                </li>
+            </ul>
+        </div>   
+        
+    </footer>
+
+</body>
+</html>
